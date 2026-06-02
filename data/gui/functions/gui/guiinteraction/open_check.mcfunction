@@ -1,2 +1,0 @@
-execute positioned ~ ~1 ~ unless entity @e[tag=gui,distance=...001] positioned ~ ~-1 ~ run function gui:gui/guiinteraction/impostor
-execute positioned ~ ~1 ~ if entity @e[tag=gui,distance=...001] positioned ~ ~-1 ~ run function gui:gui/guiinteraction/open

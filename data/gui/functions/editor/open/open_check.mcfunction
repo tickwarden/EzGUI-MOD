@@ -1,2 +1,0 @@
-execute unless entity @e[tag=editormarker] run tellraw @s {"text": "I'm sorry, you either left the editor or already in it","color": "red"}
-execute if entity @e[tag=editormarker] run function gui:editor/open/open

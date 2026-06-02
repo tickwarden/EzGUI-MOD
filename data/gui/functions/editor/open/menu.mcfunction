@@ -1,5 +1,0 @@
-function gui:tellraw_line
-tellraw @s {"text": "Welcome to the editor!","color": "green"}
-tellraw @s {"text": "Please select what would you like to perform:","color": "aqua"}
-tellraw @s [{"text": "[Create a new page]","color": "green","bold": true,"clickEvent": {"action":"run_command","value":"/function gui:editor/open/menu_selection/create"}}," ",{"text": "[Edit an existing page]","color": "gold","bold": true,"clickEvent": {"action":"run_command","value":"/function gui:editor/open/menu_selection/edit"}}," ",{"text": "[Delete an existing page]","color": "dark_red","bold": true,"clickEvent": {"action":"run_command","value":"/function gui:editor/open/menu_selection/delete"}}," ",{"text": "[Restore backup]","color": "gray","bold": true,"clickEvent": {"action":"run_command","value":"/function gui:editor/open/menu_selection/restore"}}]
-function gui:tellraw_line
