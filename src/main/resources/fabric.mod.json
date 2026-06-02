@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "ezgui-fabric",
+  "version": "${version}",
+  "name": "EzGUI Fabric",
+  "description": "A server-side GUI mod with dynamic buttons and commands.",
+  "authors": [
+    "MesterMan03"
+    
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/ezgui-fabric/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.mesterman03.ezgui_fabric.EzGUIMod"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.5",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
