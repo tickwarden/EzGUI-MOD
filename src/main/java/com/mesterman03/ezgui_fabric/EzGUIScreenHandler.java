@@ -130,7 +130,7 @@ public class EzGUIScreenHandler extends GenericContainerScreenHandler {
             if (soundId != null) {
                 SoundEvent soundEvent = Registries.SOUND_EVENT.get(soundId);
                 if (soundEvent != null) {
-                    player.playSound(soundEvent, SoundCategory.MASTER, 1.0f, 1.0f);
+                    player.getWorld().playSound(null, player.getBlockPos(), soundEvent, SoundCategory.MASTER, 1.0f, 1.0f);
                 }
             }
         }
@@ -173,7 +173,7 @@ public class EzGUIScreenHandler extends GenericContainerScreenHandler {
     }
 
     private void executeCommand(String command, boolean asServer, ServerPlayerEntity player) {
-        command = command.replace("%player%", player.getEntityName());
+        command = command.replace("%player%", player.getName().getString());
         if (asServer) {
             player.server.getCommandManager().executeWithPrefix(player.server.getCommandSource(), command);
         } else {
