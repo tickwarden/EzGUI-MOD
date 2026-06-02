@@ -1,6 +1,4 @@
-# EzGUI
-> by Mester
+# EzGUI-MOD
+> by tickwarden
 
-Minecraft version: 1.16+
-
-YouTube video on how to use it: https://youtu.be/5EBptAFCQlU
+Minecraft version: 1.21.1
